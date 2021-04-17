@@ -4,7 +4,7 @@
 
 ## Notes
 
-- A description of all methods and data structures can be seen in the code.
+- A description of all data structures and methods can be seen in the code.
 
 ## What I have learned from this project
 
