@@ -116,7 +116,20 @@ public class MyBinaryTree {
     }
     return true;
   }
-
+  
+  public void reverseTree(TreeNode node) {
+    TreeNode temp = node.leftNode;
+    node.leftNode = node.rightNode;
+    node.rightNode = temp;
+    
+    if(node.leftNode != null) {
+      reverseTree(node.leftNode)
+    }
+    if(node.rightNode != null) {
+      reverseTree(node.leftNode)
+    }
+  }
+  
   public void inOrderPrint(TreeNode node) {
     if (node != null) {
       inOrderPrint(node.leftNode);
